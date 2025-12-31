@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E notes App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="header">
+        <h2>E notes App</h2>
+    </div>
+
+    <div class="search-container">
+        <form action="/" method="get">
+            <input type="text" name="q" placeholder="Search notes (e.g. GE3451)" value="{{ query }}">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="container">
+        {% if notes|length == 0 %}
+            <p style="text-align:center; color: #666;">No notes found.</p>
+        {% endif %}
+
+        {% for note in notes %}
+        <div class="card">
+            <div class="card-title">
+                {{ note['code'] }} - {{ note['title'] }}
+            </div>
+            <div class="card-actions">
+                <a href="{{ url_for('view_file', filename=note['filename']) }}" target="_blank" class="btn btn-view">VIEW</a>
+                
+                <a href="{{ url_for('download_file', filename=note['filename']) }}" class="btn btn-down">DOWNLOAD</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
