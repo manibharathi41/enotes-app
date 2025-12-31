@@ -1,0 +1,22 @@
+[
+    {
+        "code": "GE3451",
+        "title": "Engineering Maths",
+        "filename": "maths.pdf"
+    },
+    {
+        "code": "GE3471",
+        "title": "Engineering Chy",
+        "filename": "chemistry.pdf"
+    },
+    {
+        "code": "GE3581",
+        "title": "Engineering Phy",
+        "filename": "physics.pdf"
+    },
+    {
+        "code": "GE3672",
+        "title": "DPCO",
+        "filename": "dpco.pdf"
+    }
+]
