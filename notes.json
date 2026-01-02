@@ -2,21 +2,21 @@
     {
         "code": "GE3451",
         "title": "Engineering Maths",
-        "filename": "maths.pdf"
+        "link": "https://drive.google.com/file/d/YOUR_MATHS_LINK_HERE/view?usp=sharing"
     },
     {
         "code": "GE3471",
         "title": "Engineering Chy",
-        "filename": "chemistry.pdf"
+        "link": "https://drive.google.com/file/d/YOUR_CHEMISTRY_LINK_HERE/view?usp=sharing"
     },
     {
         "code": "GE3581",
         "title": "Engineering Phy",
-        "filename": "physics.pdf"
+        "link": "https://drive.google.com/file/d/YOUR_PHYSICS_LINK_HERE/view?usp=sharing"
     },
     {
         "code": "GE3672",
         "title": "DPCO",
-        "filename": "dpco.pdf"
+        "link": "https://drive.google.com/file/d/YOUR_DPCO_LINK_HERE/view?usp=sharing"
     }
 ]
