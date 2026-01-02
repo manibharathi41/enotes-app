@@ -28,14 +28,15 @@
             <div class="card-title">
                 {{ note['code'] }} - {{ note['title'] }}
             </div>
-            <div class="card-actions">
-                <a href="{{ url_for('view_file', filename=note['filename']) }}" target="_blank" class="btn btn-view">VIEW</a>
+           <div class="card-actions">
+                <a href="{{ note['link'] }}" target="_blank" class="btn btn-view">VIEW</a>
                 
-                <a href="{{ url_for('download_file', filename=note['filename']) }}" class="btn btn-down">DOWNLOAD</a>
+                <a href="{{ note['link'] }}" target="_blank" class="btn btn-down">DOWNLOAD</a>
             </div>
         </div>
         {% endfor %}
     </div>
 
 </body>
+
 </html>
